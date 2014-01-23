@@ -13,9 +13,18 @@
 
   <body>
     <h1>cafe? IKAGAWA DO</h1>
-    <div class="box">
-      <h2>espresso</h2>
-      <span class="label label-success">エスプレッソ</span>
+    <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          espresso
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse">
+      <div class="panel-body">
+        <span class="label label-success">エスプレッソ</span>
       <span class="label label-warning">スチームドミルク</span>
       <span class="label label-danger">フォームドミルク</span>
       <span class="label label-info">アイスミルク</span>
@@ -42,16 +51,36 @@
         </div>
       </div>
       <li>アイスカフェラテ 450</li>
+      </div>
     </div>
-    <div class="box">
-      <h2>softdrink</h2>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          softdrink
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
       <li>ミルク（ホットorアイス） 300</li>
       <li>オレンジジュース 300</li>
       <li>グレープジュース 300</li>
+      </div>
     </div>
-    <div class="box">
-      <h2>tea</h2>
-      <li>English breakfast 500</li>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          tea
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        <li>English breakfast 500</li>
       <li>Darjeeling earlgray 500</li>
       <li>Yerba mate 500</li>
       <li><span class="label label-primary">caffeine free</span>Lemon & Ginger 500</li>
@@ -61,6 +90,9 @@
       <li><span class="label label-primary">caffeine free</span>Rooibos 500</li>
       <li><span class="label label-primary">caffeine free</span>Spiced winter red tea 500</li>
       <li><span class="label label-primary">caffeine free</span>Peppermint leaves 500</li>
+      </div>
     </div>
+  </div>
+</div>
   </body>
 </html>
